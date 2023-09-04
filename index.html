@@ -13,8 +13,8 @@
     />
     <link rel="stylesheet" href="style/style.css" />
   </head>
-  <body>
-    <div class="container">
+  <body id="body">
+    <div class="container" id="container">
       <!-- Sign-up form start -->
       <div class="leftContainer containerItem">
         <h1 class="title">Stay updated!</h1>
@@ -45,20 +45,24 @@
           </p>
         </ul>
         <form>
-          <label for="email"> Email address </label>
+          <div class="formText">
+            <p>Email address</p>
+            <p id="errorText"></p>
+          </div>
           <input
             type="text "
             id="emailInput"
             name="email"
             placeholder=" email@company.com"
           />
-          <button type="input" class="subscribeBtn">
+          <button type="input" id="subscribeBtn" class="subscribeBtn">
             Subscribe to monthly newsletter
           </button>
         </form>
       </div>
       <div class="rightContainer containerItem"></div>
     </div>
+
     <script src="js/script.js"></script>
   </body>
 </html>
