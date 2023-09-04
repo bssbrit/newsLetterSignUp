@@ -30,6 +30,7 @@ subscribeBtn.addEventListener("click", function (e) {
     dismissBtn.addEventListener("click", function () {
       body.innerHTML = "";
       body.appendChild(container);
+      emailInput.value = "";
     });
   }
   //  document.body.removeChild(container);
