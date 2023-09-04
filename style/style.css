@@ -86,31 +86,6 @@ input {
   background-size: cover;
   background-position: center;
 }
-@media screen and (max-width: 600px) {
-  .container {
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    padding: 0;
-  }
-  /* .leftContainer {
-  } */
-
-  h1 {
-    font-size: 2rem;
-  }
-  .rightContainer {
-    order: -1;
-    height: 30vh;
-    background-color: red;
-    background-image: url("./illustration-sign-up-mobile.svg");
-    background-size: cover;
-
-    background-position: center;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
-}
 
 /* Success Div */
 
@@ -137,4 +112,34 @@ span {
 }
 #succesIcon {
   width: 3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+  }
+  /* .leftContainer {
+  } */
+
+  h1 {
+    font-size: 2rem;
+  }
+  .rightContainer {
+    order: -1;
+    height: 30vh;
+    background-color: red;
+    background-image: url("./illustration-sign-up-mobile.svg");
+    background-size: cover;
+
+    background-position: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .succesContainer {
+    height: 70%;
+    width: 90%;
+  }
 }
